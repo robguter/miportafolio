@@ -1,0 +1,121 @@
+* {
+	-webkit-transition: 0.35s;
+	-moz-transition: 0.35s;
+	transition: 0.35s;
+}/* 
+body, html {
+    background-color:   rgb(255,255,255,0.75);
+    color:              rgb(0,0,0,0.95);
+} */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.contphpy,
+.contfxja,
+.contjaan,
+.contkoan,
+.contjscr,
+.contmypo,
+.contscpy {
+    position: relative;
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width:              100%;
+    min-height:         190px;
+    margin:             5px;
+    padding:            5px;
+    padding-top:        20px;
+	-webkit-transition: 0.250s;
+	-moz-transition:    0.250s;
+	transition:         0.250s;
+}
+.contphpy {
+    background-image: url('../images/pyph.png'); /* Tu imagen de fondo */
+}
+.contfxja {
+    background-image: url('../images/fxja.png'); /* Tu imagen de fondo */
+}
+.contjaan {
+    background-image: url('../images/jaan.png'); /* Tu imagen de fondo */
+}
+.contjscr {
+    background-image: url('../images/jscr.png'); /* Tu imagen de fondo */
+}
+.contkoan {
+    background-image: url('../images/koan.png'); /* Tu imagen de fondo */
+}
+.contmypo {
+    background-image: url('../images/mypo.png'); /* Tu imagen de fondo */
+}
+.contscpy {
+    background-image: url('../images/scpy.png'); /* Tu imagen de fondo */
+}
+
+.contphpy:hover,
+.contfxja:hover,
+.contjaan:hover,
+.contkoan:hover,
+.contjscr:hover,
+.contmypo:hover,
+.contscpy:hover {
+    margin:         2px;
+    margin-right:   0px;
+    margin-left:    5px;
+    padding:        5px;
+    padding-top:    20px;
+}
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.cardsf {
+    color:              rgb(255,255,255,.95);
+    margin:             10px;
+    padding:            10px;
+	-webkit-transition: 0.250s;
+	-moz-transition:    0.250s;
+	transition:         0.250s;
+}
+.card form placeholder {
+    color: rgba(0,0,0,.25)
+}
+.carda {
+    display:            block;
+    background-color:  rgba(255,255,255,.75);
+    color:             rgba(0,0,0,.95);
+}
+.carda:hover {
+    background-color:  rgba(75,85,95,.75);
+    box-shadow:         rgba(255,255,255, 0.1) 0px 10px 15px -3px, rgba(255,255,255, 0.05) 0px 4px 6px -2px;
+    -webkit-box-shadow: rgba(255,255,255, 0.1) 0px 10px 15px -3px, rgba(255,255,255, 0.05) 0px 4px 6px -2px;
+}
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

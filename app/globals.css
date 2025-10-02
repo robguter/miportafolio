@@ -1,26 +1,203 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --white-50: #ffffff80;
+    --black-50: #00000080;
+    --background: #ffffff;
+    --primary:    #007bff;
+    --secondary:    #AcB5Bd;
+    --success:     #28a745;
+    --danger:     #dc3545;
+    --warning:     #ffc107;
+    --info:     #17a2b8;
+    --light:    #f8f9fa;
+    --dark:     #343a40;
+    --accent:     #0050AACC;
+    --muted:      #AAB0BB77;
+    --transparent:#55707722;
+    --chart-1:    #22AA22CC;
+    --chart-2:    #dc3545CC;
+    --chart-4:    #007bffBB;
+    --chart-5:    #dc3545AA;
+    --variant:    #DDAADD88;
+    --gradnt:     #00000080;
 
+    --foreground: #171717;
+    --primary-foreground: #FFFFFFBB;
+    --secondary-foreground: #FFFFFF;
+    --warning-foreground: #00000080;
+    --info-foreground: #00000080;
+    --light-foreground: #00000080;
+  }
+  .light {
+    --white: #ffffff;
+    --black: #000000;
+    --white-50: #ffffff80;
+    --black-50: #00000080;
+    --background: #ffffff;
+    --primary:    #0080FF;
+    --secondary:    #AcB5Bd;
+    --success:     #28a745;
+    --danger:     #dc3545;
+    --warning:     #ffc107;
+    --info:     #17a2b8;
+    --light:    #f8f9fa;
+    --dark:     #343a40;
+    --accent:     #0050AACC;
+    --muted:      #AAB0BB77;
+    --transparent:#55707722;
+    --chart-1:    #22AA22CC;
+    --chart-2:    #dc3545CC;
+    --chart-4:    #007bffBB;
+    --chart-5:    #dc3545AA;
+    --variant:    #FFFFFF88;
+    --gradnt:     #00000080;
+
+    --foreground: #171717;
+    --primary-foreground: #FFFFFFBB;
+    --secondary-foreground: #FFFFFF;
+    --warning-foreground: #00000080;
+    --info-foreground: #00000080;
+    --gray-foreground: #80808080;
+    --light-foreground: #00000080;
+  }
+  .dark {
+    --white:      #ffffff;
+    --black:      #000000;
+    --white-50:   #ffffff80;
+    --black-50:   #00000080;
+    --background: #1a2a3a;
+    --primary:    #007bff;
+    --secondary:  #AcB5Bd;
+    --success:    #28a745;
+    --danger:     #dc3545;
+    --warning:    #ffc107;
+    --info:       #17a2b8;
+    --light:      #f8f9fa;
+    --dark:       #343a40;
+    --accent:     #007bff80;
+    --muted:      #AAB0BB77;
+    --transparent:  #55707722;
+    --chart-1:    #22AA22CC;
+    --chart-2:    #dc3545CC;
+    --chart-4:    #007bffBB;
+    --chart-5:    #dc3545AA;
+    --variant:    #30383FFF;
+    --gradnt:     #00010280;
+
+    --foreground: #ededed;
+    --primary-foreground: #ededed;
+    --secondary-foreground: #FFFFFF;
+    --warning-foreground: #FFFFFFDD;
+    --info-foreground: #FFFFFFBB;
+    --gray-foreground: #202020F0;
+    --light-foreground: #FFFFFF99;
+    /* ... otras variables de color oscuro */
+  }
+}
 @theme inline {
+  --color-white:      var(--white);
+  --color-black:      var(--black);
+  --color-white-50:   var(--white-50);
+  --color-black-50:   var(--black-50);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-primary:    var(--primary);
+  --color-secondary:  var(--secondary);
+  --color-success:    var(--success);
+  --color-danger:     var(--danger);
+  --color-warning:    var(--warning);
+  --color-info:       var(--info);
+  --color-light:      var(--light);
+  --color-dark:       var(--dark);
+
+  --color-accent:     var(--accent);
+  --color-muted:      var(--muted);
+  --color-transparent: var(--transparent);
+  --color-chart-1:     var(--chart-1);
+  --color-chart-2:     var(--chart-2);
+  --color-chart-4:     var(--chart-4);
+  --color-chart-5:     var(--chart-5);
+  --color-variant:     var(--variant);
+  --color-gradnt:      var(--gradnt);
+
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-foreground:         var(--foreground);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info-foreground:    var(--info-foreground);
+  --color-gray-foreground:    var(--gray-foreground);
+  --color-light-foreground:   var(--light-foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
+.ani1 {
+  view-timeline-name: --sesion;
+  view-timeline-axis: block;
 
+  animation-timeline: --sesion; /* Vincula la animación al scroll del documento */
+  animation-duration: 100ms;  /*La duración se puede considerar en píxeles */
+  animation-fill-mode: both; /* Mantiene los estilos iniciales y finales */
+  animation-name: show; /* Nombre de la animación */
+  animation-range: entry 15% cover 85%
+}
+.anima1 {
+  view-timeline-name: --sesion;
+  view-timeline-axis: block;
+
+  animation-timeline: --sesion; /* Vincula la animación al scroll del documento */
+  /*animation-duration: 100ms;  La duración se puede considerar en píxeles */
+  animation-fill-mode: both; /* Mantiene los estilos iniciales y finales */
+  animation-name: show; /* Nombre de la animación */
+  animation-range: entry 25% cover 50%
+}
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+body * {
+  /* Transición de todas las propiedades durante 0.5 segundos con un ritmo 'ease-in' */
+  transition: all 0.35s ease-in;
+}
+buttonv:hover, badgev:hover  {
+	background: linear-gradient(180deg, var(--accent), var(--primary));
+   -webkit-animation: gradient 15s ease infinite;
+   animation: gradient 15s ease infinite;
+    border: 1px solid transparent;
+}
+oimgpd:hover, .ocard:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--gradnt) 0px 10px 15px -3px,
+                var(--gradnt) 0px 4px 6px -2px;
+                /* var(--gradnt) 0px 10px 15px -3px inset,
+                var(--gradnt) 0px 4px 6px -2px inset; */
+}
+.oimg:hover {
+    border: 1px solid transparent;
+    padding:  12px 5px;
+    box-shadow: var(--gradnt) 0px 5px  25px -3px inset,
+                var(--gradnt) 0px 6px  25px -2px inset,
+                var(--gradnt) 0px 5px  25px -3px inset,
+                var(--gradnt) 0px 6px  25px -2px inset;
 }
