@@ -78,16 +78,16 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className={`${bebas.className} "font-bold text-xl text-foreground"`}>Analista Programador</div>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#about" className="text-white-50 hover:text-foreground transition-colors">
                   Acerca de
               </a>
-              <a href="#skills" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#skills" className="text-white-50 hover:text-foreground transition-colors">
                   Habilidades
               </a>
-              <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#projects" className="text-white-50 hover:text-foreground transition-colors">
                   Proyectos
               </a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#contact" className="text-white-50 hover:text-foreground transition-colors">
                   Contacto
               </a>
             </div>
@@ -557,16 +557,10 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-
-
-            
-
           </div>
         </div>
       </section>
       </section>
-
-
 
       {/* Footer */}
       <footer className="py-3 px-4 sm:px-6 lg:px-3 bg-card/50 border-t border-border">

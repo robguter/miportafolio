@@ -30,6 +30,7 @@
     --secondary-foreground: #FFFFFF;
     --warning-foreground: #00000080;
     --info-foreground: #00000080;
+    --gray-foreground: #80808020;
     --light-foreground: #00000080;
   }
   .light {
@@ -93,7 +94,7 @@
     --secondary-foreground: #FFFFFF;
     --warning-foreground: #FFFFFFDD;
     --info-foreground: #FFFFFFBB;
-    --gray-foreground: #202020F0;
+    --gray-foreground: #FFFFFFFF;
     --light-foreground: #FFFFFF99;
     /* ... otras variables de color oscuro */
   }
