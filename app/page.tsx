@@ -78,16 +78,16 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className={`${bebas.className} "font-bold text-xl text-foreground"`}>Analista Programador</div>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-white-50 hover:text-foreground transition-colors">
+              <a href="#about" className="text-white-50 hover:text-foreground">
                   Acerca de
               </a>
-              <a href="#skills" className="text-white-50 hover:text-foreground transition-colors">
+              <a href="#skills" className="text-white-50 hover:text-foreground">
                   Habilidades
               </a>
-              <a href="#projects" className="text-white-50 hover:text-foreground transition-colors">
+              <a href="#projects" className="text-white-50 hover:text-foreground">
                   Proyectos
               </a>
-              <a href="#contact" className="text-white-50 hover:text-foreground transition-colors">
+              <a href="#contact" className="text-white-50 hover:text-foreground">
                   Contacto
               </a>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mt-0">
             <div>
               <div className="w-35 h-35 mx-auto mb-7 mt-0 bg-primary-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-lg">
-                <img src={sMiFoto} className={`${"oimgp"} "w-28 h-32 mt-0 rounded-full hover:rounded-lg transition-all duration-500"`} />
+                <img src={sMiFoto} className={`${"oimgp"} "w-28 h-32 mt-0 rounded-full hover:rounded-lg"`} />
               </div>
               <h1 className={`${bebas.className} "text-3xl md:text-5xl font-bold text-foreground mb-2 text-balance"`}>Robert Gutiérrez</h1>
               
@@ -114,22 +114,22 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6 mt-0 ml-5 group mb-0">
+            <div className="flex flex-wrap justify-center gap-6 mt-0 ml-5 mb-0">
               <div className="flex flex-wrap md:grid-cols-3 justify-center gap-5 mt-0 mb-0">
-                <div className="h-60 gap-5">
-                  <img className={`${"oimg"} "mt-0 h-30 w-30 mb-5 gap-4"`} src={imphp} alt="PHP" title="PHP" />
-                  <img className={`${"oimg"} "mt-0 h-25 w-30 mt-5 gap-4"`} src={imkot} alt="Kotlin" title="Kotlin" />
+                <div className="h-65 gap-2">
+                  <img className={`${"oimg"}`} src={imphp} alt="PHP" title="PHP" />
+                  <img className={`${"oimg"}`} src={imkot} alt="Kotlin" title="Kotlin" />
                 </div>
-                <div className="h-60 gap-5">
-                  <img className={`${"oimg"} "mt-0 h-25 w-30 mb-8 gap-4"`} src={imjav} alt="JavaFX" title="JavaFX" />
-                  <img className={`${"oimg"} "mt-0 h-30 w-30 mt-5 gap-4"`} src={imcsh} alt="CShard" title="CShard" />
+                <div className="h-65 gap-2">
+                  <img className={`${"oimg"}`} src={imjav} alt="JavaFX" title="JavaFX" />
+                  <img className={`${"oimg"}`} src={imcsh} alt="CShard" title="CShard" />
                 </div>
-                <div className="h-60 gap-5">
-                  <img className={`${"oimg"} "mt-0 h-27 ml-0 mb-10 w-30 gap-4"`} src={imand} alt="Android" title="Android" />
-                  <img className={`${"oimg"} "mt-0 h-25 w-30 mt-0 ml-3 gap-4"`} src={impyt} alt="Pyton" title="Pyton" />
+                <div className="h-65 gap-2">
+                  <img className={`${"oimg"}`} src={imand} alt="Android" title="Android" />
+                  <img className={`${"oimg"}`} src={impyt} alt="Pyton" title="Pyton" />
                 </div>
-                <div className="h-35 gap-1">
-                  <img className={`${"oimg"} "mt-0 h-30 w-30 gap-5"`} src={immys} alt="MySql" title="MySql" />
+                <div className="h-35 mt-3">
+                  <img className={`${"oimg"}`} src={immys} alt="MySql" title="MySql" />
                 </div>
               </div>
               <Link href={lkmimail} target="Otro">
@@ -157,7 +157,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Acerca de Mí</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-primary/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-primary/20"`}>
               <CardHeader>
                 <CardTitle className="text-foreground">Experiencia Profesional</CardTitle>
               </CardHeader>
@@ -168,7 +168,7 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-primary/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-primary/20"`}>
               <CardHeader>
                 <CardTitle className="text-foreground">Enfoque Técnico</CardTitle>
               </CardHeader>
@@ -190,7 +190,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Habilidades Técnicas</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-primary/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-primary/20"`}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-foreground">
                   <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
@@ -214,7 +214,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-accent/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-accent/20"`}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-foreground">
                   <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
@@ -238,7 +238,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-chart-1/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-chart-1/20"`}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-foreground">
                   <div className="w-8 h-8 bg-chart-1 rounded-lg flex items-center justify-center">
@@ -262,7 +262,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-chart-2/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-chart-2/20"`}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-foreground">
                   <div className="w-8 h-8 bg-chart-2 rounded-lg flex items-center justify-center">
@@ -284,7 +284,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-chart-4/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-chart-4/20"`}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-foreground">
                   <div className="w-8 h-8 bg-chart-4 rounded-lg flex items-center justify-center">
@@ -306,7 +306,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "hover:shadow-lg transition-shadow border-border hover:border-chart-5/20"`}>
+            <Card className={`${"ocard"} "hover:shadow-lg border-border hover:border-chart-5/20"`}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-foreground">
                   <div className="w-8 h-8 bg-chart-5 rounded-lg flex items-center justify-center">
@@ -338,11 +338,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Proyectos Destacados</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className={`${"ocard"} "group hover:shadow-xl transition-all duration-300 border-border hover:border-primary/30"`}>
+            <Card className={`${"ocard"} "group hover:shadow-xl border-border hover:border-primary/30"`}>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-foreground">
                   Sistema de Gestión
-                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground" />
+                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 text-muted-foreground" />
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Aplicación web desarrollada en PHP con MySQL
@@ -366,11 +366,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "group hover:shadow-xl transition-all duration-300 border-border hover:border-accent/30"`}>
+            <Card className={`${"ocard"} "group hover:shadow-xl border-border hover:border-accent/30"`}>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-foreground">
                   App Móvil Android
-                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground" />
+                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 text-muted-foreground" />
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Aplicación nativa desarrollada en Kotlin
@@ -394,11 +394,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "group hover:shadow-xl transition-all duration-300 border-border hover:border-chart-1/30"`}>
+            <Card className={`${"ocard"} "group hover:shadow-xl border-border hover:border-chart-1/30"`}>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-foreground">
                   Dashboard Analytics
-                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground" />
+                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 text-muted-foreground" />
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">Aplicación desktop con JavaFX</CardDescription>
               </CardHeader>
@@ -420,11 +420,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "group hover:shadow-xl transition-all duration-300 border-border hover:border-chart-2/30"`}>
+            <Card className={`${"ocard"} "group hover:shadow-xl border-border hover:border-chart-2/30"`}>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-foreground">
                   API REST
-                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground" />
+                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 text-muted-foreground" />
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Microservicio desarrollado en Python
@@ -448,11 +448,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "group hover:shadow-xl transition-all duration-300 border-border hover:border-chart-4/30"`}>
+            <Card className={`${"ocard"} "group hover:shadow-xl border-border hover:border-chart-4/30"`}>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-foreground">
                   Sistema ERP
-                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground" />
+                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 text-muted-foreground" />
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">Solución empresarial completa</CardDescription>
               </CardHeader>
@@ -474,11 +474,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className={`${"ocard"} "group hover:shadow-xl transition-all duration-300 border-border hover:border-chart-5/30"`}>
+            <Card className={`${"ocard"} "group hover:shadow-xl border-border hover:border-chart-5/30"`}>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-foreground">
                   Herramientas DevOps
-                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground" />
+                  <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 text-muted-foreground" />
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">Scripts de automatización</CardDescription>
               </CardHeader>

@@ -136,7 +136,7 @@ const ContactForm: React.FC = () => { // DEJA SOLO React.FC si no recibe props
       )}
       
       {/* Botón de Envío */}
-      <Button type="submit" size="lg" disabled={isSubmitting} className="bg-primary hover:bg-primary/90">
+      <Button variant="outline" type="submit" size="lg" disabled={isSubmitting} className="bg-primary">
         <Mail className="mr-2 h-4 w-4" />
         {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
       </Button>

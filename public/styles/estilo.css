@@ -1,17 +1,18 @@
 * {
-	-webkit-transition: 0.35s;
-	-moz-transition: 0.35s;
-	transition: 0.35s;
-}/* 
-body, html {
-    background-color:   rgb(255,255,255,0.75);
-    color:              rgb(0,0,0,0.95);
-} */
+}
+
 a:link,
 a:visited,
 a:hover,
 a:active {
   text-decoration: none;
+}
+a:hover {
+  text-shadow:  0px 2px 2px #FFFFFF80,
+                0px 3px 3px #FFFFFF40,
+                0px 4px 4px #00000040,
+                0px 5px 5px #00000080,
+                0px 6px 6px #000000CC;
 }
 .contphpy,
 .contfxja,
@@ -29,9 +30,6 @@ a:active {
     margin:             5px;
     padding:            5px;
     padding-top:        20px;
-	-webkit-transition: 0.250s;
-	-moz-transition:    0.250s;
-	transition:         0.250s;
 }
 .contphpy {
     background-image: url('../images/pyph.png'); /* Tu imagen de fondo */
