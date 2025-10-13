@@ -31,6 +31,7 @@ var immys = 'images/mysql.png'
 
 var lkmimail = "mailto:robguter114@gmail.com, robgutgom@hotmail.com";
 var lkmigith = "https://github.com/robguter";
+const annoCur = new Date().getFullYear();
 
 interface FormData {
   user_name: string; // Nombre
@@ -73,7 +74,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
+      <nav className="sticky top-0 z-50 bg-dark/50 backdrop-blur-sm border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className={`${bebas.className} "font-bold text-xl text-foreground"`}>Analista Programador</div>
@@ -94,18 +95,17 @@ export default function Home() {
           </div>
         </div>
       </nav>
-
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
 
           <div className="grid md:grid-cols-2 gap-8 mt-0">
-            <div>
+            <div className="mr-0">
               <div className="w-35 h-35 mx-auto mb-7 mt-0 bg-primary-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-lg">
                 <img src={sMiFoto} className={`${"oimgp"} "w-28 h-32 mt-0 rounded-full hover:rounded-lg"`} />
               </div>
               <h1 className={`${bebas.className} "text-3xl md:text-5xl font-bold text-foreground mb-2 text-balance"`}>Robert Gutiérrez</h1>
-              
+
               <p className="text-lg text-muted-foreground mb-2 max-w-2xl mx-auto">
                 Especialista en desarrollo backend, frontend y móvil con experiencia en múltiples tecnologías y bases de datos.
                 Experto en PHP, MySql, PostgreSQL, JavaScript, JQuery, CSS, conocimientos avanzados en Android Studio, Kotlin,
@@ -114,45 +114,45 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6 mt-0 ml-5 mb-0">
-              <div className="flex flex-wrap md:grid-cols-3 justify-center gap-5 mt-0 mb-0">
-                <div className="h-65 gap-2">
+            <div className="flex flex-wrap justify-center gap-8 mt-0 ml-25 mb-0">
+              <div className="flex flex-wrap md:grid-cols-3 justify-center gap-8 mt-0 mb-0">
+                <div className="h-50">
                   <img className={`${"oimg"}`} src={imphp} alt="PHP" title="PHP" />
-                  <img className={`${"oimg"}`} src={imkot} alt="Kotlin" title="Kotlin" />
+                  <img className={`${"oimgb"}`} src={imkot} alt="Kotlin" title="Kotlin" />
                 </div>
-                <div className="h-65 gap-2">
+                <div className="h-50">
                   <img className={`${"oimg"}`} src={imjav} alt="JavaFX" title="JavaFX" />
-                  <img className={`${"oimg"}`} src={imcsh} alt="CShard" title="CShard" />
+                  <img className={`${"oimgb"}`} src={imcsh} alt="CShard" title="CShard" />
                 </div>
-                <div className="h-65 gap-2">
+                <div className="h-50">
                   <img className={`${"oimg"}`} src={imand} alt="Android" title="Android" />
-                  <img className={`${"oimg"}`} src={impyt} alt="Pyton" title="Pyton" />
+                  <img className={`${"oimgb"}`} src={impyt} alt="Pyton" title="Pyton" />
                 </div>
-                <div className="h-35 mt-3">
-                  <img className={`${"oimg"}`} src={immys} alt="MySql" title="MySql" />
+                <div className="h-40 mt-0">
+                  <img className={`${"oimgb"}`} src={immys} alt="MySql" title="MySql" />
                 </div>
               </div>
-              <Link href={lkmimail} target="Otro">
-                <Button variant="outline" size="lg" className="bg-primary">
-                  <Mail className="mr-2 h-4 w-4 mb-0 pb-0" />
-                  Contactar
-                </Button>
-              </Link>
-              <Link href={lkmigith} target="Otro">
-              <Button variant="outline" size="lg" className="border-border hover:bg-muted bg-transparent">
-                <Github className="mr-2 h-4 w-4 mb-0 pb-0" />
-                Ver GitHub
-              </Button>
-              </Link>
+              <div className="px-4 sm:px-6 lg:px-8 gap-8">
+                <Link href={lkmimail} target="Otro">
+                  <Button variant="outline" size="lg" className="ml-12 mr-9 bg-primary">
+                    <Mail className="mr-2 h-4 w-4 mb-0 pb-0" />
+                    Contactar
+                  </Button>
+                </Link>
+                <Link href={lkmigith} target="Otro">
+                  <Button variant="outline" size="lg" className="border-border hover:bg-muted bg-transparent">
+                    <Github className="mr-2 h-4 w-4 mb-0 pb-0" />
+                    Ver GitHub
+                  </Button>
+                </Link>
+              </div>
+              <label id="about"></label>
             </div>
           </div>
-
-
         </div>
       </section>
-
       {/* About Section */}
-      <section id="about" className="py-2 mb-5 mt-0 px-4 sm:px-6 lg:px-8 bg-card/50">
+      <section className="py-2 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
       <section className="anima1">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Acerca de Mí</h2>
@@ -179,13 +179,14 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+            <label id="skills"></label>
           </div>
         </div>
       </section>
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 mb-5 px-4 sm:px-6 lg:px-8">
+      <section className="py-15 mb-5 px-4 sm:px-6 lg:px-8">
       <section className="anima1">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Habilidades Técnicas</h2>
@@ -327,13 +328,14 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground mt-3">Aplicaciones de escritorio multiplataforma</p>
               </CardContent>
             </Card>
+            <label id="projects"></label>
           </div>
         </div>
       </section>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
+      <section className="py-2 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
       <section className="anima1">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Proyectos Destacados</h2>
@@ -505,7 +507,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 mb-5 px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="py-10 mb-42 px-4 sm:px-6 lg:px-8">
       <section className="anima1">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Contacto</h2>
@@ -565,7 +567,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-3 px-4 sm:px-6 lg:px-3 bg-card/50 border-t border-border">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground">© 2024 Ingeniero en Sistemas. Todos los derechos reservados.</p>
+          <p className="text-muted-foreground">©{annoCur} Ingeniero en Sistemas. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>

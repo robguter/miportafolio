@@ -1,6 +1,8 @@
 * {
 }
-
+nav {
+    border-bottom: 1px solid #FFFFFF20;
+}
 a:link,
 a:visited,
 a:hover,
