@@ -475,7 +475,6 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-
             <Card className={`${"ocard"} "group hover:shadow-xl border-border hover:border-chart-5/30"`}>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-foreground">
@@ -505,7 +504,6 @@ export default function Home() {
         </div>
       </section>
       </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-15 mb-33 px-4 sm:px-6 lg:px-8">
       <section className="anima1">
