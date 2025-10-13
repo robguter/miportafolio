@@ -96,7 +96,7 @@ export default function Home() {
         </div>
       </nav>
       {/* Hero Section */}
-      <section className="py-10 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 mb-5">
         <div className="max-w-6xl mx-auto text-center">
 
           <div className="grid md:grid-cols-2 gap-8 mt-0">
@@ -152,7 +152,7 @@ export default function Home() {
         </div>
       </section>
       {/* About Section */}
-      <section className="py-2 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
+      <section className="py-0 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
       <section className="anima1">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Acerca de Mí</h2>
@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-15 mb-5 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
       <section className="anima1">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Habilidades Técnicas</h2>
@@ -335,7 +335,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-2 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
+      <section className="py-0 mb-5 px-4 sm:px-6 lg:px-8 bg-card/50">
       <section className="anima1">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Proyectos Destacados</h2>
@@ -507,7 +507,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-10 mb-42 px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="py-15 mb-33 px-4 sm:px-6 lg:px-8">
       <section className="anima1">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Contacto</h2>
