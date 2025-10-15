@@ -2,8 +2,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+/* import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea"; */
 import { ExternalLink, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { bebas } from "@/components/ui/fonts";
 import React from 'react';
@@ -70,8 +70,27 @@ const handleFormSubmit = async (data: FormData): Promise<void> => {
   }
 };
 
+import Head from 'next/head'
+
 export default function Home() {
   return (
+    <>
+      <Head>
+        <title>Desarrollador de Sistemas & Sitios Web | Robert Gutiérrez</title>
+        <meta name="description" content="Especialista en desarrollo backend, frontend y móvil con experiencia en PHP, MySQL, Python, Kotlin, JavaFX, C#, Next.js, React y DevOps. Soluciones robustas y escalables para tu negocio." />
+        <meta name="keywords" content="desarrollo web, sistemas, backend, frontend, móvil, APIs REST, PHP, MySQL, Python, Kotlin, JavaFX, C#, Next.js, React, DevOps, automatización" />
+        <meta property="og:title" content="Desarrollador de Sistemas & Sitios Web | Robert Gutiérrez" />
+        <meta property="og:description" content="Soluciones en desarrollo de software, aplicaciones web, móviles y automatización con tecnologías modernas y enfoque profesional." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://miportafolio-one.vercel.app" />
+        <meta property="og:image" content="/banner.png" /> {/* imagen representativa de tu página */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Robert Gutiérrez" />
+        {/* Schema.org para Google */}
+        <meta itemProp="name" content="Desarrollador de Sistemas & Sitios Web | Robert Gutiérrez" />
+        <meta itemProp="description" content="Especialista en desarrollo backend, frontend y móvil con experiencia en diversas tecnologías y sistemas." />
+        <meta itemProp="image" content="/banner.png" />
+      </Head>
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-dark/50 backdrop-blur-sm border-border">
@@ -569,5 +588,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
