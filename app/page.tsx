@@ -83,13 +83,13 @@ export default function Home() {
         <meta property="og:description" content="Soluciones en desarrollo de software, aplicaciones web, móviles y automatización con tecnologías modernas y enfoque profesional." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://miportafolio-one.vercel.app" />
-        <meta property="og:image" content="/banner.png" /> {/* imagen representativa de tu página */}
+        <meta property="og:image" content="/srg.png" /> {/* imagen representativa de tu página */}
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Robert Gutiérrez" />
         {/* Schema.org para Google */}
         <meta itemProp="name" content="Desarrollador de Sistemas & Sitios Web | Robert Gutiérrez" />
         <meta itemProp="description" content="Especialista en desarrollo backend, frontend y móvil con experiencia en diversas tecnologías y sistemas." />
-        <meta itemProp="image" content="/banner.png" />
+        <meta itemProp="image" content="/srg.png" />
       </Head>
     <div className="min-h-screen bg-background">
       {/* Navigation */}
