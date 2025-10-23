@@ -128,8 +128,8 @@ export default function Home() {
               <p className="text-lg text-muted-foreground mb-2 max-w-2xl mx-auto">
                 Especialista en desarrollo backend, frontend y móvil con experiencia en múltiples tecnologías y bases de datos.
                 Experto en PHP, MySql, PostgreSQL, JavaScript, JQuery, CSS, conocimientos avanzados en Android Studio, Kotlin,
-                Java, JavaFx, C#, Visial Basic, con conocimientos suficientes en Python y MEAN (Mongo, Express, Angular
-                y Node) y conocimientos básicos en Next, React.
+                Java, JavaFx, C#, Visial Basic, y dominio de Python, Next, React y MEAN (Mongo, Express, Angular
+                y Node).
               </p>
             </div>
 
